@@ -1,0 +1,26 @@
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.navigation ul li {
+    text-align: center;
+    list-style: none;
+}
+
+.navigation ul li a {
+    color: rgb(243, 127, 233);
+    text-decoration: none;
+    font-size: 3em;
+    padding: 5px 20px;
+    display: inline-flex;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.navigation ul li:hover a {
+    color: rgb(22, 238, 238);
+}
