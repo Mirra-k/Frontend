@@ -9,7 +9,7 @@ export function CvPage() {
 
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
-    const [items, setItems] = useState([]);
+    const [item, setItems] = useState([]);
 
 
     useEffect(() => {
@@ -88,9 +88,9 @@ export function CvPage() {
             <Row>
                 <Col className="card-1">
                     <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Admin" class="rounded-circle" width="150" />
-                    <h3>Name Surname</h3>
-                    <h4>Username</h4>
-                    <h4>Email</h4>
+                    <h3>{item.name} {item.surname}</h3>
+                    <h4>{item.username}</h4>
+                    <h4>{item.email}</h4>
                 </Col>
                 <Col className="card-2">
                     <Col className="color-1" > 
@@ -110,19 +110,19 @@ export function CvPage() {
                     </Col>
 
                     <Col className="color-2">
-                        <h4>Education</h4>
+                        <h4>{item.education}</h4>
                     </Col>
                     <Col className="color-2">
-                        <h4>Work experience</h4>
+                        <h4>{item.workExperience}</h4>
                     </Col>
                     <Col className="color-2">
-                        <h4>Technical skills</h4>
+                        <h4>{item.technicalSkills}</h4>
                     </Col>
                     <Col className="color-2">
-                        <h4>Interests</h4>
+                        <h4>{item.interests}</h4>
                     </Col>
                     <Col className="color-2">
-                        <h4>Personal qualities</h4>
+                        <h4>{item.personalQualities}</h4>
                     </Col>
                 </Col>
             </Row>
