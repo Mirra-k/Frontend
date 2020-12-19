@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {CvPage} from "./CvPage";
+import {CvPage} from "./CvPage.jsx";
 import {ExitButton} from "../ExitButton/ExitButton";
 
 
