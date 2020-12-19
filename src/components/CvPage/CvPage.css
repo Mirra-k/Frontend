@@ -46,3 +46,11 @@ body{
     color: white;
     padding: 40px;
 }
+.msg {
+    color: #3d3d3d;
+    font-size: 5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
